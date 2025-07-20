@@ -1,0 +1,40 @@
+body {
+  background-color: #0a0a0a;
+  font-family: 'Georgia', serif;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  max-width: 700px;
+  padding: 40px;
+  background: rgba(249, 246, 242, 0.6); /* semi-transparent */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #1a1a1a;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 1.5s ease;
+}
+
+.letter.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hint {
+  position: absolute;
+  bottom: 30px;
+  font-size: 0.9rem;
+  color: #555;
+}
